@@ -1,3 +1,30 @@
-# Godot 4+ specific ignores
+# Godot-specific generated files
 .godot/
-/android/
+export/
+.import/ # For older Godot versions (prior to 4.0)
+
+# Build artifacts
+*.exe
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.dmg
+*.apk
+*.ipa
+*.x86
+*.x86_64
+*.pck
+*.tscn.converted # Generated when converting scenes
+*.tres.converted # Generated when converting resources
+
+# Editor-specific files
+# These are typically user-specific and not meant for sharing
+# Add more as needed based on your editor setup
+# For example, if you use VS Code, you might add:
+.vscode/
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
