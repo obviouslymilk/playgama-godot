@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://djmp0ky72683u"]
+[gd_scene load_steps=3 format=3 uid="uid://djmp0ky72683u"]
 
+[ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://cm08djkiuap80" path="res://assets/logo.png" id="1_yqeox"]
 
 [node name="Menu" type="VBoxContainer"]
@@ -10,6 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("1_vjb58")
 
 [node name="TopbarMargin" type="MarginContainer" parent="."]
 layout_mode = 2
