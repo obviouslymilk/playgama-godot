@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://djmp0ky72683u"]
+
+[ext_resource type="Texture2D" uid="uid://cm08djkiuap80" path="res://assets/logo.png" id="1_yqeox"]
+
+[node name="Menu" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TopbarMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 12
+
+[node name="Container" type="HBoxContainer" parent="TopbarMargin"]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="TopbarMargin/Container"]
+layout_mode = 2
+texture = ExtResource("1_yqeox")
+
+[node name="BoardMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 12
+
+[node name="Board" type="GridContainer" parent="BoardMargin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+columns = 3
