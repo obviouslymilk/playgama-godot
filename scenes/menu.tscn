@@ -1,9 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://djmp0ky72683u"]
+[gd_scene load_steps=15 format=3 uid="uid://djmp0ky72683u"]
 
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://cm08djkiuap80" path="res://assets/logo.png" id="1_yqeox"]
 [ext_resource type="PackedScene" uid="uid://cn32ydxbie01f" path="res://ui/main_button/main_button.tscn" id="3_con2f"]
-[ext_resource type="Texture2D" uid="uid://d18vufsdpvsq3" path="res://assets/icons/sdk.svg" id="4_mhnvy"]
+[ext_resource type="Texture2D" uid="uid://cffq81iaiu5u6" path="res://assets/icons/Platform.svg" id="4_6cdou"]
+[ext_resource type="Texture2D" uid="uid://d3fcaoujwodci" path="res://assets/icons/Device.svg" id="5_i42df"]
+[ext_resource type="Texture2D" uid="uid://bvnw6b05ug7ut" path="res://assets/icons/Game.svg" id="6_7jp70"]
+[ext_resource type="Texture2D" uid="uid://dvjwyjckeufib" path="res://assets/icons/storage.svg" id="7_v86rl"]
+[ext_resource type="Texture2D" uid="uid://ci2xqgdyqx66d" path="res://assets/icons/Ad.svg" id="8_mxgkd"]
+[ext_resource type="Texture2D" uid="uid://c7sc5yir6xg0r" path="res://assets/icons/Gamer.svg" id="9_g6gyw"]
+[ext_resource type="Texture2D" uid="uid://duxk8vrp5khno" path="res://assets/icons/Social.svg" id="10_3dmrc"]
+[ext_resource type="Texture2D" uid="uid://c8rm23d2scukt" path="res://assets/icons/Leaderboards.svg" id="11_81l6r"]
+[ext_resource type="Texture2D" uid="uid://8ux4pkjtjnos" path="res://assets/icons/Payment.svg" id="12_rsfmq"]
+[ext_resource type="Texture2D" uid="uid://bf2prl14d52l3" path="res://assets/icons/Achievements.svg" id="13_oi1it"]
+[ext_resource type="Texture2D" uid="uid://c88ddfks1708" path="res://assets/icons/Config.svg" id="14_i42df"]
 
 [node name="Menu" type="VBoxContainer"]
 anchors_preset = 15
@@ -42,8 +52,68 @@ theme_override_constants/h_separation = 4
 theme_override_constants/v_separation = 4
 columns = 3
 
-[node name="MenuButton" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+[node name="Platform" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
-icon = ExtResource("4_mhnvy")
+icon = ExtResource("4_6cdou")
 label = "Платформа"
 color = Color(0.6862745, 0.44705883, 0.99607843, 1)
+
+[node name="Device" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("5_i42df")
+label = "Устройство"
+color = Color(1, 0.41960785, 0.2901961, 1)
+
+[node name="Game" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("6_7jp70")
+label = "Игра"
+color = Color(0.4, 0.7764706, 0.30980393, 1)
+
+[node name="Storage" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("7_v86rl")
+label = "Хранилище"
+color = Color(0.42352942, 0.7647059, 0.9607843, 1)
+
+[node name="Ad" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("8_mxgkd")
+label = "Реклама"
+color = Color(1, 0.3529412, 0.7490196, 1)
+
+[node name="Player" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("9_g6gyw")
+label = "Игрок"
+color = Color(0.7372549, 0.9019608, 0.28235295, 1)
+
+[node name="Social" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("10_3dmrc")
+label = "Сообщество"
+color = Color(0.7372549, 0.9019608, 0.28235295, 1)
+
+[node name="Leaderboards" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("11_81l6r")
+label = "Рейтинг"
+color = Color(0.9843137, 0.24313726, 0.40392157, 1)
+
+[node name="Payments" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("12_rsfmq")
+label = "Оплата"
+color = Color(1, 0.6039216, 0.18039216, 1)
+
+[node name="Achivements" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("13_oi1it")
+label = "Достижения"
+color = Color(0, 0.7607843, 0.69803923, 1)
+
+[node name="Config" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("14_i42df")
+label = "Конфигурация"
+color = Color(0.63529414, 0.63529414, 0.65882355, 1)
