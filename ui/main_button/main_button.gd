@@ -24,6 +24,15 @@ extends Panel
 		if ContentNode:
 			ContentNode.modulate = color
 
+@export var route_name: String = ""
+
+func _gui_input(event: InputEvent) -> void:
+	if Engine.is_editor_hint(): return
+
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			Router.redirect(route_name)
+
 func _ready() -> void:
 	IconNode.texture = icon;
 	LabelNode.text = label;

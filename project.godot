@@ -18,10 +18,17 @@ config/icon="res://icon.svg"
 [autoload]
 
 Bridge="*res://addons/playgama_bridge/bridge.gd"
+Router="*res://global/router.gd"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/playgama_bridge/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "gray"
+}
 
 [rendering]
 
