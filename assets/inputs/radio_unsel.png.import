@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3nd35lka2yv0"
-path="res://.godot/imported/platform-icon.png-95547657801387b4b5c24a6e20ed523a.ctex"
+uid="uid://b7fbr0exjk4dj"
+path="res://.godot/imported/radio_unsel.png-82b6fbece65e25033b2cc3cfd3d94ed6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/platform-icon.png"
-dest_files=["res://.godot/imported/platform-icon.png-95547657801387b4b5c24a6e20ed523a.ctex"]
+source_file="res://assets/inputs/radio_unsel.png"
+dest_files=["res://.godot/imported/radio_unsel.png-82b6fbece65e25033b2cc3cfd3d94ed6.ctex"]
 
 [params]
 

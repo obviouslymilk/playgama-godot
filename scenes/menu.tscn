@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://djmp0ky72683u"]
+[gd_scene load_steps=5 format=3 uid="uid://djmp0ky72683u"]
 
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://cm08djkiuap80" path="res://assets/logo.png" id="1_yqeox"]
+[ext_resource type="PackedScene" uid="uid://cn32ydxbie01f" path="res://ui/main_button/main_button.tscn" id="3_con2f"]
+[ext_resource type="Texture2D" uid="uid://d18vufsdpvsq3" path="res://assets/icons/sdk.svg" id="4_mhnvy"]
 
 [node name="Menu" type="VBoxContainer"]
 anchors_preset = 15
@@ -39,3 +41,9 @@ size_flags_vertical = 3
 theme_override_constants/h_separation = 4
 theme_override_constants/v_separation = 4
 columns = 3
+
+[node name="MenuButton" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
+layout_mode = 2
+icon = ExtResource("4_mhnvy")
+label = "Платформа"
+color = Color(0.6862745, 0.44705883, 0.99607843, 1)
