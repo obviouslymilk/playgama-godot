@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cffq81iaiu5u6" path="res://assets/icons/Platform.svg" id="4_6cdou"]
 [ext_resource type="Texture2D" uid="uid://d3fcaoujwodci" path="res://assets/icons/Device.svg" id="5_i42df"]
 [ext_resource type="Texture2D" uid="uid://bvnw6b05ug7ut" path="res://assets/icons/Game.svg" id="6_7jp70"]
-[ext_resource type="Texture2D" uid="uid://dvjwyjckeufib" path="res://assets/icons/storage.svg" id="7_rcuxh"]
+[ext_resource type="Texture2D" uid="uid://dvjwyjckeufib" path="res://assets/icons/Storage.svg" id="7_rcuxh"]
 [ext_resource type="Texture2D" uid="uid://ci2xqgdyqx66d" path="res://assets/icons/Ad.svg" id="8_mxgkd"]
 [ext_resource type="Texture2D" uid="uid://c7sc5yir6xg0r" path="res://assets/icons/Gamer.svg" id="9_g6gyw"]
 [ext_resource type="Texture2D" uid="uid://duxk8vrp5khno" path="res://assets/icons/Social.svg" id="10_3dmrc"]

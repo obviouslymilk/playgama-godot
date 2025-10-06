@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dieyem51qnk7"]
+[gd_scene load_steps=5 format=3 uid="uid://dieyem51qnk7"]
 
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_7j252"]
 [ext_resource type="PackedScene" uid="uid://c4vm617c6majj" path="res://ui/header/header.tscn" id="1_8pv2r"]
+[ext_resource type="Script" uid="uid://c4fy45xif5v0h" path="res://scenes/platform/platform.gd" id="2_yevkn"]
 [ext_resource type="PackedScene" uid="uid://x0ejfjowaedm" path="res://ui/page_title/page_title.tscn" id="3_34mie"]
 
 [node name="Platform" type="VBoxContainer"]
@@ -11,6 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_7j252")
+script = ExtResource("2_yevkn")
 
 [node name="Header" parent="." instance=ExtResource("1_8pv2r")]
 layout_mode = 2
@@ -44,3 +46,14 @@ theme_override_constants/separation = 16
 [node name="PageTitle" parent="Margin/ContentPanel/Margin/Content" instance=ExtResource("3_34mie")]
 layout_mode = 2
 text = "Платформа"
+
+[node name="StatsText" type="RichTextLabel" parent="Margin/ContentPanel/Margin/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/paragraph_separation = 4
+bbcode_enabled = true
+text = "ID Платформы: [color=#D8BBFF]{id}[/color]
+Язык: [color=#D8BBFF]{lang}[/color]
+Payload: [color=#D8BBFF]{payload}[/color]
+TLD: [color=#D8BBFF]{tld}[/color]
+Аудио: [color=#D8BBFF]{audio}[/color]"
