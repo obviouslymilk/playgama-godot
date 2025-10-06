@@ -52,7 +52,7 @@ func _update_visuals() -> void:
 
 func _on_panel_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
-		if event.button_index != MOUSE_BUTTON_LEFT: return
-		emit_signal("pressed")
-		if route:
-			Router.redirect(route)
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			emit_signal("pressed")
+			if route:
+				Router.redirect(route)
