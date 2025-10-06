@@ -49,7 +49,7 @@ text = "Платформа"
 
 [node name="StatsText" type="RichTextLabel" parent="Margin/ContentPanel/Margin/Content"]
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_vertical = 0
 theme_override_constants/paragraph_separation = 4
 bbcode_enabled = true
 text = "ID Платформы: [color=#D8BBFF]{id}[/color]
@@ -57,3 +57,7 @@ text = "ID Платформы: [color=#D8BBFF]{id}[/color]
 Payload: [color=#D8BBFF]{payload}[/color]
 TLD: [color=#D8BBFF]{tld}[/color]
 Аудио: [color=#D8BBFF]{audio}[/color]"
+fit_content = true
+
+[node name="Actions" type="GridContainer" parent="Margin/ContentPanel/Margin/Content"]
+layout_mode = 2

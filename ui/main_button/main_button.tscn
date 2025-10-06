@@ -3,15 +3,25 @@
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_sstjf"]
 [ext_resource type="Script" uid="uid://bn380mkh7amdn" path="res://ui/main_button/main_button.gd" id="2_i7tdt"]
 
-[node name="MainButton" type="Panel"]
+[node name="MainButton" type="Control"]
 custom_minimum_size = Vector2(210, 80)
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 3
+offset_right = 210.0
+offset_bottom = 80.0
 size_flags_horizontal = 0
+mouse_default_cursor_shape = 2
 theme = ExtResource("1_sstjf")
 script = ExtResource("2_i7tdt")
 
-[node name="ContentMargin" type="MarginContainer" parent="."]
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 210.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="ContentMargin" type="MarginContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -23,13 +33,16 @@ theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
-[node name="Content" type="VBoxContainer" parent="ContentMargin"]
+[node name="Content" type="VBoxContainer" parent="Panel/ContentMargin"]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Icon" type="TextureRect" parent="ContentMargin/Content"]
+[node name="Icon" type="TextureRect" parent="Panel/ContentMargin/Content"]
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="Label" type="Label" parent="ContentMargin/Content"]
+[node name="Label" type="Label" parent="Panel/ContentMargin/Content"]
 layout_mode = 2
+
+[connection signal="mouse_entered" from="Panel" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Panel" to="." method="_on_mouse_exited"]

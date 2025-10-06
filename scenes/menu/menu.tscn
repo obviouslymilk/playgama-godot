@@ -57,74 +57,63 @@ layout_mode = 2
 icon = ExtResource("4_6cdou")
 label = "Платформа"
 color = Color(0.6862745, 0.44705883, 0.99607843, 1)
-route_name = "platform"
 
 [node name="Device" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("5_i42df")
 label = "Устройство"
 color = Color(1, 0.41960785, 0.2901961, 1)
-route_name = "device"
 
 [node name="Game" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("6_7jp70")
 label = "Игра"
 color = Color(0.4, 0.7764706, 0.30980393, 1)
-route_name = "game"
 
 [node name="Storage" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("7_rcuxh")
 label = "Хранилище"
 color = Color(0.42352942, 0.7647059, 0.9607843, 1)
-route_name = "storage"
 
 [node name="Ad" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("8_mxgkd")
 label = "Реклама"
 color = Color(1, 0.3529412, 0.7490196, 1)
-route_name = "ad"
 
 [node name="Player" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("9_g6gyw")
 label = "Игрок"
 color = Color(0.7372549, 0.9019608, 0.28235295, 1)
-route_name = "player"
 
 [node name="Social" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("10_3dmrc")
 label = "Сообщество"
 color = Color(0.7372549, 0.9019608, 0.28235295, 1)
-route_name = "social"
 
 [node name="Leaderboards" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("11_81l6r")
 label = "Рейтинг"
 color = Color(0.9843137, 0.24313726, 0.40392157, 1)
-route_name = "leaderboards"
 
 [node name="Payments" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("12_rsfmq")
 label = "Оплата"
 color = Color(1, 0.6039216, 0.18039216, 1)
-route_name = "payments"
 
 [node name="Achivements" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("13_oi1it")
 label = "Достижения"
 color = Color(0, 0.7607843, 0.69803923, 1)
-route_name = "achivements"
 
 [node name="Config" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2
 icon = ExtResource("14_i42df")
 label = "Конфигурация"
 color = Color(0.63529414, 0.63529414, 0.65882355, 1)
-route_name = "config"
