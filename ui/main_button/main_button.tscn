@@ -15,7 +15,7 @@ corner_radius_bottom_right = 12
 corner_radius_bottom_left = 12
 
 [node name="MainButton" type="Control"]
-custom_minimum_size = Vector2(210, 80)
+custom_minimum_size = Vector2(210, 95)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 210.0
@@ -26,15 +26,17 @@ theme = ExtResource("1_sstjf")
 script = ExtResource("2_i7tdt")
 
 [node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 210.0
-offset_bottom = 80.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_default_cursor_shape = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_7hspl")
 
 [node name="ContentMargin" type="MarginContainer" parent="Panel"]
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -48,14 +50,21 @@ theme_override_constants/margin_bottom = 12
 
 [node name="Content" type="VBoxContainer" parent="Panel/ContentMargin"]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 12
 
 [node name="Icon" type="TextureRect" parent="Panel/ContentMargin/Content"]
+custom_minimum_size = Vector2(24, 24)
 layout_mode = 2
 size_flags_horizontal = 0
 
 [node name="Label" type="Label" parent="Panel/ContentMargin/Content"]
+custom_minimum_size = Vector2(0, 43)
 layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 14
+vertical_alignment = 2
+autowrap_mode = 2
 
 [connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
 [connection signal="mouse_entered" from="Panel" to="." method="_on_mouse_entered"]
