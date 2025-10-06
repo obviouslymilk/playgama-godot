@@ -1,14 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://dieyem51qnk7"]
+[gd_scene load_steps=5 format=3 uid="uid://dieyem51qnk7"]
 
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_7j252"]
 [ext_resource type="PackedScene" uid="uid://c4vm617c6majj" path="res://ui/header/header.tscn" id="1_8pv2r"]
 [ext_resource type="Script" uid="uid://c4fy45xif5v0h" path="res://scenes/platform/platform.gd" id="2_yevkn"]
 [ext_resource type="PackedScene" uid="uid://x0ejfjowaedm" path="res://ui/page_title/page_title.tscn" id="3_34mie"]
-[ext_resource type="PackedScene" uid="uid://cn32ydxbie01f" path="res://ui/main_button/main_button.tscn" id="5_5mh1j"]
-[ext_resource type="Texture2D" uid="uid://b0hkdmsuxjniq" path="res://assets/icons/Flag.svg" id="6_s46kr"]
-[ext_resource type="Texture2D" uid="uid://dvp8fnl7me5io" path="res://assets/icons/Play.svg" id="7_s46kr"]
-[ext_resource type="Texture2D" uid="uid://bp37m6n8af3bd" path="res://assets/icons/Achievment.svg" id="8_bgyx7"]
-[ext_resource type="Texture2D" uid="uid://ci35ob4fiv1xt" path="res://assets/icons/Stop.svg" id="9_p0y3u"]
 
 [node name="Platform" type="VBoxContainer"]
 anchors_preset = 15
@@ -66,43 +61,3 @@ fit_content = true
 
 [node name="Actions" type="GridContainer" parent="Margin/ContentPanel/Margin/Content"]
 layout_mode = 2
-size_flags_vertical = 3
-columns = 3
-
-[node name="GameReady" parent="Margin/ContentPanel/Margin/Content/Actions" instance=ExtResource("5_5mh1j")]
-layout_mode = 2
-icon = ExtResource("6_s46kr")
-label = "Отправить Game Ready"
-is_secondary = true
-
-[node name="GameStarted" parent="Margin/ContentPanel/Margin/Content/Actions" instance=ExtResource("5_5mh1j")]
-layout_mode = 2
-icon = ExtResource("7_s46kr")
-label = "Отправить Gameplay Started"
-is_secondary = true
-
-[node name="GameLoading" parent="Margin/ContentPanel/Margin/Content/Actions" instance=ExtResource("5_5mh1j")]
-layout_mode = 2
-icon = ExtResource("7_s46kr")
-label = "Отправить Game Loading Started"
-is_secondary = true
-
-[node name="GotAchivement" parent="Margin/ContentPanel/Margin/Content/Actions" instance=ExtResource("5_5mh1j")]
-layout_mode = 2
-icon = ExtResource("8_bgyx7")
-label = "Отправить Player got Achievementrted"
-is_secondary = true
-
-[node name="GameStopped" parent="Margin/ContentPanel/Margin/Content/Actions" instance=ExtResource("5_5mh1j")]
-layout_mode = 2
-icon = ExtResource("9_p0y3u")
-label = "Отправить Gameplay Stopped"
-is_secondary = true
-
-[node name="GameLoadingStopped" parent="Margin/ContentPanel/Margin/Content/Actions" instance=ExtResource("5_5mh1j")]
-layout_mode = 2
-icon = ExtResource("9_p0y3u")
-label = "Отправить Game Loading Stopped"
-is_secondary = true
-
-[connection signal="pressed" from="Margin/ContentPanel/Margin/Content/Actions/GameReady" to="." method="_on_game_ready_pressed"]
