@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dieyem51qnk7"]
+[gd_scene load_steps=4 format=3 uid="uid://dieyem51qnk7"]
 
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_7j252"]
 [ext_resource type="PackedScene" uid="uid://c4vm617c6majj" path="res://ui/header/header.tscn" id="1_8pv2r"]
+[ext_resource type="PackedScene" uid="uid://x0ejfjowaedm" path="res://ui/page_title/page_title.tscn" id="3_34mie"]
 
 [node name="Platform" type="VBoxContainer"]
 anchors_preset = 15
@@ -24,11 +25,22 @@ theme_override_constants/margin_bottom = 8
 [node name="ContentPanel" type="Panel" parent="Margin"]
 layout_mode = 2
 
-[node name="Content" type="VBoxContainer" parent="Margin/ContentPanel"]
+[node name="Margin" type="MarginContainer" parent="Margin/ContentPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Content" type="VBoxContainer" parent="Margin/ContentPanel/Margin"]
+layout_mode = 2
 theme_override_constants/separation = 16
+
+[node name="PageTitle" parent="Margin/ContentPanel/Margin/Content" instance=ExtResource("3_34mie")]
+layout_mode = 2
+text = "Платформа"

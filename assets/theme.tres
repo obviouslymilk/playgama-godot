@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=14 format=3 uid="uid://e17kbjwrs7yv"]
+[gd_resource type="Theme" load_steps=15 format=3 uid="uid://e17kbjwrs7yv"]
 
 [ext_resource type="FontFile" uid="uid://ctpkh87dlkjr8" path="res://assets/font.ttf" id="1_5x3i2"]
 [ext_resource type="Texture2D" uid="uid://bk7kpobuw1ha" path="res://assets/inputs/radio_sel.png" id="1_lu33j"]
@@ -10,6 +10,17 @@ content_margin_top = 9.0
 content_margin_right = 12.0
 content_margin_bottom = 9.0
 bg_color = Color(0.28627452, 0.28627452, 0.29803923, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7g2p0"]
+content_margin_left = 12.0
+content_margin_top = 9.0
+content_margin_right = 12.0
+content_margin_bottom = 9.0
+bg_color = Color(0.609843, 0.3351396, 1, 1)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
@@ -103,6 +114,7 @@ corner_radius_bottom_left = 12
 [resource]
 default_font = ExtResource("1_5x3i2")
 Button/styles/disabled = SubResource("StyleBoxFlat_5x3i2")
+Button/styles/focus = SubResource("StyleBoxFlat_7g2p0")
 Button/styles/hover = SubResource("StyleBoxFlat_wl1kw")
 Button/styles/normal = SubResource("StyleBoxFlat_lu33j")
 Button/styles/pressed = SubResource("StyleBoxFlat_wycmq")

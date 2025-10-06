@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://x0ejfjowaedm"]
+
+[ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_6e8v7"]
+
+[node name="PageTitle" type="Label"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 25.0
+grow_horizontal = 2
+theme = ExtResource("1_6e8v7")
+theme_override_font_sizes/font_size = 18
