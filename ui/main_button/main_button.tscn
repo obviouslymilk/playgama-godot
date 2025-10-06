@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cn32ydxbie01f"]
+[gd_scene load_steps=5 format=3 uid="uid://cn32ydxbie01f"]
 
 [ext_resource type="Theme" uid="uid://e17kbjwrs7yv" path="res://assets/theme.tres" id="1_sstjf"]
 [ext_resource type="Script" uid="uid://bn380mkh7amdn" path="res://ui/main_button/main_button.gd" id="2_i7tdt"]
+[ext_resource type="Texture2D" uid="uid://b0hkdmsuxjniq" path="res://assets/icons/Flag.svg" id="3_1ey7l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7hspl"]
 content_margin_left = 12.0
@@ -56,6 +57,7 @@ theme_override_constants/separation = 12
 custom_minimum_size = Vector2(24, 24)
 layout_mode = 2
 size_flags_horizontal = 0
+texture = ExtResource("3_1ey7l")
 
 [node name="Label" type="Label" parent="Panel/ContentMargin/Content"]
 custom_minimum_size = Vector2(0, 43)
@@ -63,6 +65,10 @@ layout_mode = 2
 size_flags_vertical = 6
 theme_override_constants/line_spacing = 0
 theme_override_font_sizes/font_size = 14
+<<<<<<< HEAD
+=======
+text = "Отправить Gameplay Started"
+>>>>>>> 53eac31815a14af259cd8644cdfeaa973afc2202
 vertical_alignment = 2
 autowrap_mode = 2
 
