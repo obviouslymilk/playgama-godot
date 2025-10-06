@@ -57,6 +57,7 @@ layout_mode = 2
 icon = ExtResource("4_6cdou")
 label = "Платформа"
 color = Color(0.6862745, 0.44705883, 0.99607843, 1)
+route = "platform"
 
 [node name="Device" parent="BoardMargin/Board" instance=ExtResource("3_con2f")]
 layout_mode = 2

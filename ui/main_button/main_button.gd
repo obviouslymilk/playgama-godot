@@ -2,11 +2,14 @@
 class_name MainButton
 extends Control
 
+signal pressed
+
 @onready var content_node = $Panel/ContentMargin/Content
 @onready var icon_node = $Panel/ContentMargin/Content/Icon
 @onready var label_node = $Panel/ContentMargin/Content/Label
 @onready var panel_node = $Panel
 
+@export_group("Visual")
 @export var icon: Texture2D:
 	set(value):
 		icon = value
@@ -17,6 +20,9 @@ extends Control
 		_update_visuals()
 @export var color: Color = Color.WHITE
 @export var is_secondary: bool = false;
+
+@export_group("Route")
+@export var route := ""
 
 func _ready() -> void:
 	_update_visuals()
@@ -42,3 +48,11 @@ func _update_visuals() -> void:
 		icon_node.texture = icon
 	if label_node:
 		label_node.text = label
+
+
+func _on_panel_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.button_index != MOUSE_BUTTON_LEFT: return
+		emit_signal("pressed")
+		if route:
+			Router.redirect(route)

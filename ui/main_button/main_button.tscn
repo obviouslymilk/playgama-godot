@@ -44,5 +44,6 @@ size_flags_horizontal = 0
 [node name="Label" type="Label" parent="Panel/ContentMargin/Content"]
 layout_mode = 2
 
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
 [connection signal="mouse_entered" from="Panel" to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Panel" to="." method="_on_mouse_exited"]

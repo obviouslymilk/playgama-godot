@@ -47,6 +47,7 @@ theme_override_constants/separation = 8
 custom_minimum_size = Vector2(38, 38)
 layout_mode = 2
 size_flags_horizontal = 0
+mouse_default_cursor_shape = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_01w2e")
 icon = ExtResource("2_6w8ds")
 autowrap_trim_flags = 0
